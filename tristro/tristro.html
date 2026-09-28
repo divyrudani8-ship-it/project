@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tristro</title>
+    <style>
+        *{
+         
+          padding: 2px;
+           box-sizing: border-box;  } 
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            
+            }
+        header{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(5, 114, 34);
+            color: aliceblue;
+            font-family:  'Courier New', Courier, monospace;
+        } 
+         nav {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+              height: 70px;
+
+              background-color: rgb(165, 204, 164);
+
+                display: flex;
+              justify-content: center;
+              align-items: center;
+
+            z-index: 1000;
+             }
+
+              .logo { color: rgb(5, 114, 34);
+             font-size: 32px;
+              font-weight: bold;
+             font-family: 'Courier New', Courier, monospace;
+             text-transform: uppercase;
+    
+            }
+            main {
+              min-height: 550px;
+
+              background-image: url(image.png);
+                  background-size: cover;
+                 background-position: center;
+                 background-repeat: no-repeat;
+
+                display: flex;
+               align-items: center;
+               padding: 60px;
+               color: rgb(6, 81, 6);
+            }
+            button {
+                 background-color: rgb(5, 114, 34);
+                color: white;
+                 border: none;
+                 padding: 12px 25px;
+                 border-radius: 25px;
+                font-size: 16px;
+               cursor: pointer;
+                transition: 0.3s ease;
+              }
+
+            button:hover {
+                 background-color: rgb(3, 75, 23);
+                   color: white;
+                  }
+
+
+          li::before{
+             content:"««";
+           padding: 20px;
+
+         }
+         ul{
+            list-style: none;
+         }    
+
+      
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Tristro</div>
+
+        
+    </nav>
+    <header>
+        Tristro
+    </header>
+     <main>
+        <div>
+            <h1>Delivered at your doorstep</h1>
+            <h3>Enjoy delicious snacks, meals, and drinks delivered,
+                prepared in a hygienic environment nearby.</h3>
+             <button > Get the app</button>
+        </div>
+        
+    </main> 
+    <br>
+     <section class="Health">
+        <h2>Health & Hygiene</h2>
+        <ul class="unod1">
+            <li>High-quality ingredients for great taste and nutrition.</li>
+            <li>Balanced, delicious meals for all kinds of dietary needs.</li>
+            <li>Prepared in hygienic kitchens.</li>
+        </ul>
+     </section>
+
+     <br>
+
+      <section class="sustainability">
+        <h2>Sustainability</h2>
+        <ul class="unod2">
+            <li>Eco-friendly, recyclable packaging.</li>
+            <li>Responsibly sourced, transparent ingredients.</li>
+            <li>Reduced carbon footprint with green practices.</li>
+        </ul>
+      </section>
+      <br>
+       
+       <section>
+        <h2>Speed</h2>
+        <ul class="unod3">
+            <li>Food and beverages delivered at your doorstep</li>
+            <li>Live order tracking for real-time updates.</li>
+            <li>Quick prep, seamless delivery every time.</li>
+        </ul>
+       </section>
+     
+
+      
+
+
+</body>
+</html>
