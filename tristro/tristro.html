@@ -32,7 +32,7 @@
               background-color: rgb(165, 204, 164);
 
                 display: flex;
-              justify-content: center;
+              justify-content: space-between;
               align-items: center;
 
                 z-index: 1000;
@@ -44,6 +44,13 @@
              font-family: 'Courier New', Courier, monospace;
              text-transform: uppercase;
     
+            } 
+            nav >button{  padding: 0.5rem 1rem;
+              cursor: pointer;
+              box-shadow: 0 4px 6px rgba(17, 9, 26, 0.387);
+              justify-content: right;
+              
+
             }
             main {
               min-height: 550px;
@@ -58,6 +65,21 @@
                padding: 60px;
                color: rgb(6, 81, 6);
             }
+            .img {
+                  display: grid;
+                   grid-template-columns: repeat(4, 1fr);
+                   gap: 30px;
+                   padding: 40px;
+                  max-width: 1200px;
+                  margin: 0 auto;
+         }
+
+           .img img {
+                 width: 100%;
+                 height: 180px;
+                  object-fit: cover;
+                   border-radius: 20px;
+             }
             button {
                  background-color: rgb(5, 114, 34);
                 color: white;
@@ -67,6 +89,8 @@
                 font-size: 16px;
                cursor: pointer;
                 transition: 0.3s ease;
+                 
+                  box-shadow: 0 4px 6px rgba(17, 9, 26, 0.387);
               }
 
             button:hover {
@@ -83,6 +107,103 @@
          ul{
             list-style: none;
          }    
+         ul.foot>li::before{ 
+          content: "";
+          
+
+         }
+.pro-footer {
+    background-color: rgb(39, 110, 59); 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: rgb(1, 51, 0); 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c4dec4;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(165, 204, 164);
+}
+
+.footer-col ul.foot {
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-col ul.foot li::before {
+    content: none; 
+    padding: 0;
+}
+
+.footer-col ul.foot li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul.foot a {
+    color: #c4dec4;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul.foot a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    color: #9cb99c;
+}
 
       
 
@@ -91,12 +212,10 @@
 <body>
     <nav>
         <div class="logo">Tristro</div>
-
+      <button id="app">Get the app</button>
         
     </nav>
-    <header>
-        Tristro
-    </header>
+    
      <main>
         <div>
             <h1>Delivered at your doorstep</h1>
@@ -107,6 +226,20 @@
         
     </main> 
     <br>
+    <section class="img">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/roasted-chickpea-tomato-and-chicken-bowls-healthy-chicken-recipes-65e8b8ff3ccf6.jpg?crop=0.936xw:0.936xh;0.0641xw,0.0431xh&resize=640:*" alt="food">
+      <img src="https://images.moneycontrol.com/static-mcnews/2023/10/pexels-zi%E2%80%99s-foodnatureart-9027521.jpg" alt="food">
+      <img src="https://clubmahindra.gumlet.io/blog/images/Khandvi-resized.jpg?w=376&dpr=2.6" alt="food">
+      <img src="https://t4.ftcdn.net/jpg/18/55/24/99/360_F_1855249956_5HSeXcoEcMxn682MBxjTmJnGWx5rImqF.jpg" alt="food">
+      <img src="https://www.jcookingodyssey.com/wp-content/uploads/2024/04/dabeli.jpg" alt="food">
+      <img src="https://www.holidify.com/images/cmsuploads/compressed/Muthia_20180327130712.jpg" alt="food">
+      <img src="https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903774_1280.jpg" alt="food">
+      <img src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/v1661887113/indian-food/indian-food.jpg?_i=AA" alt="food">
+      <img src="https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.jpg?s=612x612&w=0&k=20&c=5ro7Cvwx79tWpyN1r2hy3DwplFi5FuPrD_4DYD8tZpg=" alt="food">
+      <img src="https://www.allrecipes.com/thmb/8_B6OD1w6h1V0zPi8KAGzD41Kzs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/50223-homemade-crispy-seasoned-french-fries-VAT-Beauty-4x3-789ecb2eaed34d6e879b9a93dd56a50a.jpg" alt="food">
+      <img src="https://media.istockphoto.com/id/1297483389/photo/masala-tea-chai.jpg?s=612x612&w=0&k=20&c=Pv-QROSSywNh_qzHIIjHJeJB7OT0ujrKQsSiTgOmJAs=" alt="food">
+      <img src="https://preppykitchen.com/wp-content/uploads/2026/08/mocha-cupcakes-feature.jpg" alt="food">
+    </section>
      <section class="Health">
         <h2>Health & Hygiene</h2>
         <ul class="unod1">
@@ -128,7 +261,7 @@
       </section>
       <br>
        
-       <section>
+       <section class="speed" >
         <h2>Speed</h2>
         <ul class="unod3">
             <li>Food and beverages delivered at your doorstep</li>
@@ -136,7 +269,51 @@
             <li>Quick prep, seamless delivery every time.</li>
         </ul>
        </section>
-     
+          
+      
+       <footer class="pro-footer">
+  <div class="footer-container">
+    
+    <div class="footer-col brand">
+      <h2 class="footer-logo">Tristro</h2>
+      <p>Delivering fresh, hygienic, and delicious meals right to your doorstep. Taste the goodness every day.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="foot">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul class="foot">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="foot">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter (X)</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy 2026 Tristro. All rights reserved.</p>
+  </div>
+</footer>
 
       
 
