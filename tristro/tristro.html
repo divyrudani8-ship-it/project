@@ -37,7 +37,7 @@
             height: 70px;
             margin: 0;
             padding: 0 20px;
-            background-color: var(--green-light-bg);
+            background-color: var(--green-text-dark);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -46,7 +46,7 @@
         }
 
         .logo { 
-            color: var(--green-primary-dark);
+            color: var(--green-accent);
             font-size: 32px;
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
@@ -72,6 +72,29 @@
             padding: 60px;
             color: var(--green-text-dark);
         }
+        .main>h1 {
+           font-family: Lexend-Bold,calibri, sans-serif;
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 62px;
+        letter-spacing: -.5px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+        main h3 {
+            font-family: Lexend-Regular,calibri, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -.5px;
+        text-align: left;
+        margin-top: 16px;
+        } main button {
+           margin-top: 28px;
+         padding: 12px 24px;
+        }
 
         .img {
             display: grid;
@@ -88,6 +111,15 @@
             object-fit: cover;
             border-radius: 20px;
         }
+         /* .img{
+           max-width: 1200px;  
+            object-fit: cover;
+            border-radius: 20px;
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+
+         } */
 
         button {
             background-color: var(--green-primary);
@@ -126,7 +158,18 @@
             margin: 0 auto;
             padding: 40px 20px;
             text-align: left;
+            display: flex;
+            justify-content: space-between;
         }
+        .hig{  height: 200px;
+            width: 200px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+           
+             
+              margin-left: 0;
+              padding-left: 0;}
 
         /* Footer Refactored with Variables */
         .pro-footer {
@@ -248,35 +291,38 @@
       <img src="https://media.istockphoto.com/id/1297483389/photo/masala-tea-chai.jpg?s=612x612&w=0&k=20&c=Pv-QROSSywNh_qzHIIjHJeJB7OT0ujrKQsSiTgOmJAs=" alt="food">
       <img src="https://preppykitchen.com/wp-content/uploads/2026/08/mocha-cupcakes-feature.jpg" alt="food">
     </section>
-     <section class="Health">
+     <div class="Health">
         <h2>Health & Hygiene</h2>
         <ul class="unod1">
             <li>High-quality ingredients for great taste and nutrition.</li>
             <li>Balanced, delicious meals for all kinds of dietary needs.</li>
             <li>Prepared in hygienic kitchens.</li>
         </ul>
-     </section>
+        <div><img class="hig" loading="lazy" src="./first.png" alt="highlight image"></div>
+     </div>
 
      <br>
 
-      <section class="sustainability">
+      <div class="sustainability">
         <h2>Sustainability</h2>
         <ul class="unod2">
             <li>Eco-friendly, recyclable packaging.</li>
             <li>Responsibly sourced, transparent ingredients.</li>
             <li>Reduced carbon footprint with green practices.</li>
         </ul>
-      </section>
+        <div><img class="hig" loading="lazy" src="./middle.png" alt="highlight image"></div>
+      </div>
       <br>
        
-       <section class="speed" >
+       <div class="speed" >
         <h2>Speed</h2>
         <ul class="unod3">
             <li>Food and beverages delivered at your doorstep</li>
             <li>Live order tracking for real-time updates.</li>
             <li>Quick prep, seamless delivery every time.</li>
         </ul>
-       </section>
+        <div><img class="hig" loading="lazy" src="./last.png" alt="highlight image"></div>
+       </div>
           
       
        <footer class="pro-footer">
