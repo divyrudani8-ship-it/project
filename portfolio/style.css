@@ -1,3 +1,6 @@
+ html {
+    scroll-behavior: smooth;
+ }
  *{
     margin: 0;
     padding: 0;
@@ -18,12 +21,23 @@ body {
     color:var(--text);
     background:var(--background);
 } 
+.nav-head{
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
   padding: 1rem clamp(1.25rem, 5vw, 4rem);
-  background: #381773;
+  
+ backdrop-filter: blur(10px);
  }
 .nav-links {
 
@@ -53,9 +67,13 @@ body {
   border-radius: 1.5rem;
 
 }
+.highlight {
+  color: var(--accent);
+  text-transform: uppercase;
+}
 .hero h1{
   margin: 0 0 1rem;
-  color: var(--accent);
+  color: var(--muted);
   font-size: clamp(2.25rem, 5vw, 4rem);
   line-height: 1.1;
 
@@ -75,9 +93,12 @@ button {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(17, 9, 26, 0.387);
     border-radius: 6px;
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 button:hover{
     color: #ab83f1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(17, 9, 26, 0.387);
 }
 .btn {
     background-color: #381773;
@@ -119,7 +140,7 @@ box-shadow: 0 20px 48px rgb(0 0 0 / 45%);
   color: var(--muted);
    background: var(--surface);
    border-radius: 1.5rem;
-   
+  
 }
 #about h2{
   color: var(--accent);
